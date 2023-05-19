@@ -30,8 +30,9 @@ def infer(raw_image):
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-i', '--image', type=str, help='path to image')
+	parser.add_argument('-i', '--input', type=str, help='input image path')
+	parser.add_argument('-o', '--output', type=str, help='output image path')
 	args = parser.parse_args()
-	img = Image.open(args.image)
+	img = Image.open(args.input)
 	output = infer(img)
-	cv2.imwrite('output.jpg', output)
+	cv2.imwrite(args.output, output)
