@@ -1,13 +1,14 @@
 # DehazeFormer Predict
-This is a DehazeFormer implementation copied from the original [HugginFace](https://huggingface.co/spaces/IDKiro/DehazeFormer_Demo).
+This is a DehazeFormer implementation copied from the original [HuggingFace](https://huggingface.co/spaces/IDKiro/DehazeFormer_Demo).
+This repository includes the pretrained model of the DehazeFormer used on the HuggingFace demo.
+The code can be run without anaconda environment.
 
 ## Prerequisite
 Python version needs to be higher than `3.8`.
 Install the dependencies by running:
 ```shell
-    pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-
 
 ## Usage
 ```
@@ -23,7 +24,7 @@ optional arguments:
 
 ### Example
 ```shell
-    python predict.py -i <input image> -o <output image>
+python predict.py -i <input image> -o <output image>
 ```
 
 ### Credit
