@@ -1,5 +1,7 @@
 opencv-python==4.5.5.62
 tqdm
+torch
+torchvision
 pytorch-msssim
 timm
 tensorboard
